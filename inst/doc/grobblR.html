@@ -12,10 +12,26 @@
 
 <meta name="author" content="Calvin Floyd" />
 
-<meta name="date" content="2020-06-19" />
+<meta name="date" content="2020-08-28" />
 
 <title>Introduction to grobblR</title>
 
+<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
+// v0.0.1
+// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
+
+document.addEventListener('DOMContentLoaded', function() {
+  const codeList = document.getElementsByClassName("sourceCode");
+  for (var i = 0; i < codeList.length; i++) {
+    var linkList = codeList[i].getElementsByTagName('a');
+    for (var j = 0; j < linkList.length; j++) {
+      if (linkList[j].innerHTML === "") {
+        linkList[j].setAttribute('aria-hidden', 'true');
+      }
+    }
+  }
+});
+</script>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -303,7 +319,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Introduction to grobblR</h1>
 <h4 class="author">Calvin Floyd</h4>
-<h4 class="date">2020-06-19</h4>
+<h4 class="date">2020-08-28</h4>
 
 
 
@@ -321,9 +337,8 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 </ul>
 <div id="installation" class="section level2">
 <h2>Installation</h2>
-<p>You can install the development version from <a href="https://github.com/calvinmfloyd/grobblR">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># install.packages(&quot;devtools&quot;)</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;calvinmfloyd/grobblR&quot;</span>, <span class="dt">build_vignettes =</span> <span class="ot">TRUE</span>, <span class="dt">force =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p>You can install the latest version on <a href="https://CRAN.R-project.org/package=grobblR">CRAN</a> with</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;grobblR&quot;</span>)</span></code></pre></div>
 <hr />
 </div>
 <div id="grob-layout" class="section level2">
