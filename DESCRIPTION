@@ -1,6 +1,6 @@
 Package: grobblR
 Title: Creating Flexible, Reproducible 'PDF' Reports
-Version: 0.1.1
+Version: 0.2.0
 Authors@R: c(person(given = "Calvin",
                   family = "Floyd",
                   email = "calvin.michael.floyd@gmail.com",
@@ -20,8 +20,8 @@ RoxygenNote: 7.1.1
 Suggests: knitr, rmarkdown, R6, scales, testthat
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2020-08-28 15:43:54 UTC; cfloyd
+Packaged: 2020-11-30 05:08:59 UTC; cfloyd
 Author: Calvin Floyd [aut, cre, cph]
 Maintainer: Calvin Floyd <calvin.michael.floyd@gmail.com>
 Repository: CRAN
-Date/Publication: 2020-08-28 19:50:03 UTC
+Date/Publication: 2020-11-30 06:20:03 UTC

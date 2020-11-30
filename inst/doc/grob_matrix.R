@@ -116,6 +116,28 @@ df %>%
   view_grob()
 
 
+## ----initial_alter_column_names-----------------------------------------------
+
+df %>%
+  grob_matrix() %>%
+  alter_column_names(
+    column_names = list("C1", "C2", "C3"),
+    column_name_cols = list(1, 2, 3)
+    ) %>%
+  view_grob()
+
+
+## ----alter_column_names_group_names-------------------------------------------
+
+df %>%
+  grob_matrix() %>%
+  alter_column_names(
+    column_names = list("GROUP"),
+    column_name_cols = list(1:2)
+    ) %>%
+  view_grob()
+
+
 ## ----initial_alter_at---------------------------------------------------------
 
 df %>%
