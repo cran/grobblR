@@ -167,25 +167,25 @@ grob_layout(
   ) %>%
   view_grob()
 
-## ----grob_image---------------------------------------------------------------
-grob_layout(
-  grob_row(
-    border = TRUE,
-    grob_col(
-      border = TRUE,
-      'kings_logo.png'
-      ),
-    grob_col(
-      border = TRUE,
-      'https://raw.githubusercontent.com/calvinmfloyd/grobblR/master/vignettes/kings_logo.png' %>%
-        grob_image() %>%
-        add_structure("maintain_aspect_ratio", FALSE)
-      )
-    ),
-  height = 100,
-  width = 100
-  ) %>%
-  view_grob()
+## ----grob_image, eval=FALSE---------------------------------------------------
+#  grob_layout(
+#    grob_row(
+#      border = TRUE,
+#      grob_col(
+#        border = TRUE,
+#        'kings_logo.png'
+#        ),
+#      grob_col(
+#        border = TRUE,
+#        'https://raw.githubusercontent.com/calvinmfloyd/grobblR/master/vignettes/kings_logo.png' %>%
+#          grob_image() %>%
+#          add_structure("maintain_aspect_ratio", FALSE)
+#        )
+#      ),
+#    height = 100,
+#    width = 100
+#    ) %>%
+#    view_grob()
 
 ## ----simple_text_grob---------------------------------------------------------
 text = "The quick brown fox jumps over the lazy dog."
