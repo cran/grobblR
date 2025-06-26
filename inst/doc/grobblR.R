@@ -168,24 +168,24 @@ grob_layout(
   view_grob()
 
 ## ----grob_image, eval=FALSE---------------------------------------------------
-#  grob_layout(
-#    grob_row(
-#      border = TRUE,
-#      grob_col(
-#        border = TRUE,
-#        'kings_logo.png'
-#        ),
-#      grob_col(
-#        border = TRUE,
-#        'https://raw.githubusercontent.com/calvinmfloyd/grobblR/master/vignettes/kings_logo.png' %>%
-#          grob_image() %>%
-#          add_structure("maintain_aspect_ratio", FALSE)
-#        )
-#      ),
-#    height = 100,
-#    width = 100
-#    ) %>%
-#    view_grob()
+# grob_layout(
+#   grob_row(
+#     border = TRUE,
+#     grob_col(
+#       border = TRUE,
+#       'kings_logo.png'
+#       ),
+#     grob_col(
+#       border = TRUE,
+#       'https://raw.githubusercontent.com/calvinmfloyd/grobblR/master/vignettes/kings_logo.png' %>%
+#         grob_image() %>%
+#         add_structure("maintain_aspect_ratio", FALSE)
+#       )
+#     ),
+#   height = 100,
+#   width = 100
+#   ) %>%
+#   view_grob()
 
 ## ----simple_text_grob---------------------------------------------------------
 text = "The quick brown fox jumps over the lazy dog."
@@ -242,47 +242,47 @@ grob_layout(
   view_grob()
 
 ## ----grob_to_pdf, eval=FALSE--------------------------------------------------
-#  first_page_grob_layout = grob_layout(
-#    grob_row(
-#      border = TRUE,
-#      grob_col(df),
-#      grob_col(
-#        grob_row(grob_col(df)),
-#        grob_row(grob_col(p = 1/3, NA))
-#        ),
-#      grob_col(
-#        grob_row(grob_col(p = 1/3, NA)),
-#        grob_row(grob_col(df))
-#        )
-#      ),
-#    height = 100,
-#    width = 100
-#    )
-#  
-#  second_page_grob_layout = grob_layout(
-#    grob_row(
-#      border = TRUE,
-#      grob_col(
-#        border = TRUE,
-#        text
-#        )
-#      ),
-#    height = 100,
-#    width = 100
-#    )
-#  
-#  # grob_to_pdf(
-#  #   first_page_grob_layout,
-#  #   second_page_grob_layout,
-#  #   file_name = file.path(tempdir(), "test.pdf"),
-#  #   meta_data_title = 'Test PDF'
-#  #   )
-#  
-#  # OR
-#  
-#  grob_to_pdf(
-#    list(first_page_grob_layout, second_page_grob_layout),
-#    file_name = file.path(tempdir(), "test.pdf"),
-#    meta_data_title = "Test PDF"
-#    )
+# first_page_grob_layout = grob_layout(
+#   grob_row(
+#     border = TRUE,
+#     grob_col(df),
+#     grob_col(
+#       grob_row(grob_col(df)),
+#       grob_row(grob_col(p = 1/3, NA))
+#       ),
+#     grob_col(
+#       grob_row(grob_col(p = 1/3, NA)),
+#       grob_row(grob_col(df))
+#       )
+#     ),
+#   height = 100,
+#   width = 100
+#   )
+# 
+# second_page_grob_layout = grob_layout(
+#   grob_row(
+#     border = TRUE,
+#     grob_col(
+#       border = TRUE,
+#       text
+#       )
+#     ),
+#   height = 100,
+#   width = 100
+#   )
+# 
+# # grob_to_pdf(
+# #   first_page_grob_layout,
+# #   second_page_grob_layout,
+# #   file_name = file.path(tempdir(), "test.pdf"),
+# #   meta_data_title = 'Test PDF'
+# #   )
+# 
+# # OR
+# 
+# grob_to_pdf(
+#   list(first_page_grob_layout, second_page_grob_layout),
+#   file_name = file.path(tempdir(), "test.pdf"),
+#   meta_data_title = "Test PDF"
+#   )
 

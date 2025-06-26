@@ -42,7 +42,7 @@ install.packages("grobblR")
 
 ## Grob Layout
 
--   We decided on a Shiny-like bootstrap method to arrange grobs, which
+-   We decided on a bootstrap-like method to arrange grobs, which
     would incorporate nested grob-rows (a row combining one or several
     grobs) and grob-columns (a column combining one or several grobs)
     within an overall layout of grobs (which we will call a
@@ -205,7 +205,7 @@ grob_layout(
 
 -   If the user wants different cells of the matrix to have different
     aesthetics, the user can utilize `grob_matrix()` and `alter_at()`.
--   The use can alter specific cells / groups of cells, and different
+-   The user can alter specific cells / groups of cells, and different
     aesthetics with `alter_at()` once the `grob_matrix()` object is
     initialized.
 -   Run `vignette("grob_matrix")` for more information on
